@@ -1,6 +1,8 @@
 function Snake(){
+    //head coordinates
     this.x = 0;
     this.y = 0;
+    //
     this.directionVector = createVector(1, 0);
     this.tail = [];
 
