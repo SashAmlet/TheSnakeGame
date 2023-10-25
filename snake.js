@@ -41,7 +41,6 @@ function Snake(){
     }
     /*  *** EAT *** */
     this.eat = function(posArr){
-        console.log(this.x + ' ' + this.y);
         var d = [];
         posArr.forEach(e => {
             d.push(dist(this.x, this.y, e.x, e.y));
@@ -52,7 +51,6 @@ function Snake(){
                 this.tail.push(this.tail[this.tail.length-1]);
                 this.update();
                 this.show();
-                console.log('---');
                 return [true, i];
             }
         }
